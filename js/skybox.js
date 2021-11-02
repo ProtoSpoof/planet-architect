@@ -1,17 +1,12 @@
 const images = {
-	right: new Image(),
-	left: new Image(),
-	top: new Image(),
-	bottom: new Image(),
-	front: new Image(),
-	back: new Image(),
+	right: document.getElementById('skyboxRight'),
+	left: document.getElementById('skyboxLeft'),
+	top: document.getElementById('skyboxTop'),
+	bottom: document.getElementById('skyboxBottom'),
+	front: document.getElementById('skyboxFront'),
+	back: document.getElementById('skyboxBack'),
 };
-images.right.src = 'assets/galaxy/right.png';
-images.left.src = 'assets/galaxy/left.png';
-images.top.src = 'assets/galaxy/top.png';
-images.bottom.src = 'assets/galaxy/bottom.png';
-images.front.src = 'assets/galaxy/front.png';
-images.back.src = 'assets/galaxy/back.png';
+
 const cubemapImages = [images.right, images.left, images.top, images.bottom, images.front, images.back];
 
 const cubemap = twgl.createTexture(gl, {

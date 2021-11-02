@@ -19,6 +19,5 @@ function render(time) {
 	renderSkybox(invViewProjectionMatrix);
 	requestAnimationFrame(render);
 }
-console.log(hex2rgb('#f0f0f0'));
 
 requestAnimationFrame(render);
